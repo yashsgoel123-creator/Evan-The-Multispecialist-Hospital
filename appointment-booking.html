@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Appointment | Evan Multispecialist Hospital</title>
+
+<link rel="stylesheet" href="assets/css/appointment-booking.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<img src="assets/images/logo.png" class="logo" alt="Hospital Logo">
+
+<h1>Book Appointment</h1>
+
+<p>Please fill all details carefully.</p>
+
+</div>
+
+<form id="appointmentForm">
+
+<div class="grid">
+
+<div class="form-group">
+
+<label>Patient Name</label>
+
+<input
+type="text"
+id="patientName"
+placeholder="Enter Full Name"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="9876543210"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Email Address</label>
+
+<input
+type="email"
+id="email"
+placeholder="example@gmail.com">
+
+</div>
+
+<div class="form-group">
+
+<label>Age</label>
+
+<input
+type="number"
+id="age"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Gender</label>
+
+<select id="gender">
+
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Department</label>
+
+<select id="department">
+
+<option>Cardiology</option>
+<option>Neurology</option>
+<option>Orthopaedics</option>
+<option>Pulmonology</option>
+<option>General Medicine</option>
+<option>ENT</option>
+<option>Gynaecology</option>
+<option>Paediatrics</option>
+<option>Urology</option>
+<option>Dermatology</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Select Doctor</label>
+
+<select id="doctor">
+
+<option>Dr. Pankaj Jain</option>
+<option>Dr. Arjab Dan</option>
+<option>Dr. Ahmed Abdul Gaffar</option>
+<option>Dr. R. B. Singh</option>
+<option>Dr. Nidhi Yadav</option>
+<option>Dr. Akshi Singhal</option>
+<option>Dr. Archit Singhal</option>
+<option>Dr. Madan Mohan Jha</option>
+<option>Dr. Abhijeet</option>
+<option>Dr. Arvind Raj K</option>
+<option>Dr. Amit Gupta</option>
+<option>Dr. Sonal</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Doctor Availability</label>
+
+<input
+type="text"
+id="doctorStatus"
+readonly>
+
+</div>
+
+<div class="form-group">
+
+<label>Consultation Fees</label>
+
+<input
+type="text"
+id="consultationFees"
+readonly>
+
+</div>
+
+<div class="form-group full">
+
+<label>Doctor Timing</label>
+
+<input
+type="text"
+id="doctorTiming"
+readonly>
+
+</div>
+
+<div class="form-group">
+
+<label>Appointment Date</label>
+
+<input
+type="date"
+id="date"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Appointment Time</label>
+
+<select id="time">
+
+<option>09:00 AM</option>
+<option>09:30 AM</option>
+<option>10:00 AM</option>
+<option>10:30 AM</option>
+<option>11:00 AM</option>
+<option>11:30 AM</option>
+<option>12:00 PM</option>
+<option>12:30 PM</option>
+<option>01:00 PM</option>
+<option>03:00 PM</option>
+<option>03:30 PM</option>
+<option>04:00 PM</option>
+<option>04:30 PM</option>
+<option>05:00 PM</option>
+<option>05:30 PM</option>
+<option>06:00 PM</option>
+
+</select>
+
+</div>
+<div class="form-group full">
+
+<label>Address</label>
+
+<textarea
+id="address"
+placeholder="Enter Your Address"></textarea>
+
+</div>
+
+<div class="form-group full">
+
+<label>Describe Your Problem</label>
+
+<textarea
+id="problem"
+placeholder="Write your health problem"></textarea>
+
+</div>
+
+</div>
+
+<button
+type="submit"
+class="book-btn">
+
+Book Appointment
+
+</button>
+
+</form>
+
+<div
+id="successMessage"
+class="success">
+
+Appointment Booked Successfully.
+
+</div>
+
+</div>
+
+<script type="module" src="assets/js/firebase.js"></script>
+
+<script type="module" src="assets/js/appointment-booking.js"></script>
+
+</body>
+
+</html>
